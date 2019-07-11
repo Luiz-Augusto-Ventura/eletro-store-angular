@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h4 class="modal-title">Suas reservas</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+  <div *ngIf="listaReservas">
+    <!--<div *ngFor="let reserva of listaReservas">
+      <p>Código:{{reserva.id}} Produto: {{reserva.nome}} Preço: {{reserva.preco}}</p>
+    </div>-->
+    <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Produto</th>
+            <th scope="col">Preço(R$)</th>
+            <th scope="col">Imagem</th>
+            <th scope="col">Remover</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let reserva of listaReservas">
+              <td>{{reserva.id}}</td>
+              <td>{{reserva.nome}}</td>
+              <td>{{reserva.preco | number:".2"}}</td>
+              <td><img src="{{reserva.imagem}}" height="50" width="50" class="rounded" /></td>
+              <td class="text-center">
+                <a (click)="removeReserva(reserva.id)" class="text-danger" style="cursor: pointer;">
+                  <i class="material-icons">close</i>
+                </a>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-info" (click)="activeModal.close('Close click')">OK</button>
+</div>
