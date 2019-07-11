@@ -1,27 +1,17 @@
-# ProjetoAngular
+# Projeto Angular: Catálago eletrônico EletroStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+  Trabalho proposto pelo professor Maurício na disciplina de Programação para Dispositivos Móveis(7º Período) do curso de Ciência da Computação, cujo objetivo fora desenvolver uma aplicação Angular que utilize services e routes, além de um framework CSS. Neste caso foi utilizado o ngBootstrap.
+  
+  
+*ATENÇÃO: NÃO POSSUÍMOS NENHUM DIREITO AUTORAL SOBRE AS IMAGENS UTILIZADAS NESTE PROJETO; AS MESMAS FORAM UTILIZADAS COM O ÚNICO PROPÓSITO DE ESTUDO. ALÉM DISSO, AS ESPECIFICAÇÕES, DADOS E PREÇOS SOBRE OS PRODUTOS CITADOS NESTE PROJETO NÃO SÃO REAIS, SÃO APENAS DADOS ESTIMADOS, PORTANTO, NÃO DEVEM SER TOMADOS COMO LEGÍTIMOS.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Capturas de tela:
 
-## Code scaffolding
+![Captura do login](screenshots/captura_login.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Captura da página inicial](screenshots/captura_home.png)
 
-## Build
+![Captura dos detalhes do produto](screenshots/captura_detalhes.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![Captura das reservas](screenshots/captura_reservas.png)
